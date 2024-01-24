@@ -13,7 +13,7 @@
 
     if( isset($_GET['operation']) ) {
         http_response_code(200);
-        echo myResponse(false, 'Kitaplar Getirildi', $myDatabase->getAllBooksWithCategory());
+        echo myResponse(true, 'Kitaplar Getirildi', $myDatabase->getAllBooksWithCategory());
     }
     else{
         http_response_code(404);
